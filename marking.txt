@@ -1,14 +1,13 @@
 Module Marking:
 
-Marking format: MM-SM-SAMA5D2x-<CPU>-<RAM>-<FLASH>-<ETH>
-                |   |     |      |    |     |      |
-                |   |     |      |    |     |      └─ Ethernet controller
-                |   |     |      |    |     └─ Flash memory type/size
-                |   |     |      |    └─ RAM type/size
-                |   |     |      └─ Processor variant
+Marking format: MM-SM-SAMA5D2x-<RAM>-<FLASH>-<ETH>
+                |   |     |      |      |      |
+                |   |     |      |      |      └─ Ethernet controller
+                |   |     |      |      └─ Flash memory size
+                |   |     |      └─ RAM size
                 |   |     └─ Processor family
-                |   └─ Module series
-                └─ Product line
+                |   └─ SMARC module
+                └─ Mega-Milas
 
 Example: MM-SM-SAMA5D27-1G-1G-E
 
