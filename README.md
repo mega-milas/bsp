@@ -18,5 +18,4 @@ cd bsp
 ```
 
 ## Support
-For technical assistance and community discussions:
-Telegram: https://t.me/milas_public
+[![Telegram Support](https://img.shields.io/badge/Telegram-Support_Forum-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/milas_public)
