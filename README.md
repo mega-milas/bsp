@@ -15,3 +15,8 @@ The build system integrates:
 git clone https://github.com/mega-milas/bsp.git
 cd bsp
 ./buildroot.sh
+```
+
+## Support
+For technical assistance and community discussions:
+Telegram: https://t.me/milas_public
