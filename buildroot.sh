@@ -32,6 +32,10 @@ done
 script_path=$(readlink -f -- "$0")
 ROOT=$(dirname -- "$script_path")
 
+GIT=shcgit
+BRANCH=milas
+DEFCONFIG=milas_defconfig
+
 cd "$ROOT" || exit 1
 
 if [ -d ".git" ]; then
@@ -72,11 +76,11 @@ fi
 echo -e "${COLOR_CYAN}Processing buildroot repository...${COLOR_RESET}"
 if [ -d "$ROOT/buildroot/.git" ]; then
 	echo -e "${COLOR_BLUE}Updating buildroot repository...${COLOR_RESET}"
-	git -C "$ROOT/buildroot" pull --rebase origin milas || exit 1
+	git -C "$ROOT/buildroot" pull --rebase origin $BRANCH || exit 1
 	echo -e "${COLOR_GREEN}Buildroot repository updated successfully.${COLOR_RESET}"
 else
 	echo -e "${COLOR_BLUE}Cloning buildroot repository...${COLOR_RESET}"
-	git clone -b milas https://github.com/shcgit/buildroot.git "$ROOT/buildroot" || exit 1
+	git clone -b $BRANCH https://github.com/$GIT/buildroot.git "$ROOT/buildroot" || exit 1
 	echo -e "${COLOR_GREEN}Buildroot repository cloned successfully.${COLOR_RESET}"
 fi
 
@@ -85,7 +89,7 @@ cd "$ROOT/buildroot" || exit 1
 OUTPUT="$ROOT/output"
 
 echo -e "${COLOR_BLUE}Configuring build...${COLOR_RESET}"
-make defconfig BR2_DEFCONFIG=configs/milas_defconfig O="$OUTPUT" || exit 1
+make defconfig BR2_DEFCONFIG=configs/$DEFCONFIG O="$OUTPUT" || exit 1
 echo -e "${COLOR_GREEN}Configuration completed successfully.${COLOR_RESET}"
 
 echo -e "${COLOR_BLUE}Building project...${COLOR_RESET}"
