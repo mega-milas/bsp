@@ -1,17 +1,37 @@
-Module marking:
+Module Marking:
 
-MM-SM-SAMA5D2x-x-x-x
-             ^ ^ ^ ^
-             1 2 3 4
+Marking format: MM-SM-SAMA5D2x-<CPU>-<RAM>-<FLASH>-<ETH>
+                |   |     |      |    |     |      |
+                |   |     |      |    |     |      └─ Ethernet controller
+                |   |     |      |    |     └─ Flash memory type/size
+                |   |     |      |    └─ RAM type/size
+                |   |     |      └─ Processor variant
+                |   |     └─ Processor family
+                |   └─ Module series
+                └─ Product line
 
-1:
-	7 - SAMA5D27
+Example: MM-SM-SAMA5D27-1G-1G-E
 
-2:
-	1G - 1 Gbit SDRAM (128 Mbyte)
+Component breakdown:
 
-3:
-	1G - 1 Gbit QSPI NOR flash memory (128 Mbyte)
+1. <CPU> - Processor
+   Designates the processor model in SAMA5D2x family:
+   - 7: SAMA5D27 (ARM Cortex-A5, 500 MHz)
 
-4:
-	E - Include 1 Gbit ethernet controller
+2. <RAM> - RAM Memory
+   Specifies RAM type and capacity:
+   - 1G: 1 Gbit SDRAM (128 Mbyte)
+
+3. <FLASH> - Flash Memory
+   Specifies flash type and capacity:
+   - 1G: 1 Gbit QSPI NOR Flash (128 Mbyte)
+
+4. <ETH> - Ethernet Controller
+   Indicates Ethernet configuration:
+   - E: 1 Gbit Ethernet controller
+
+Full example decoding (MM-SM-SAMA5D27-1G-1G-E):
+- Processor: SAMA5D27 (Cortex-A5, 500 MHz)
+- RAM: 128 MB SDRAM (1 Gbit)
+- Flash: 128 MB QSPI NOR Flash (1 Gbit)
+- Ethernet: 1 Gbit Ethernet controller
