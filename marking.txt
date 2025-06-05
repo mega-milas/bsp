@@ -1,6 +1,6 @@
 Module Marking:
 
-Marking format: MM-SM-SAMA5D2x-<RAM>-<FLASH>-<ETH>
+Marking format: MM-SM-SAMA5D2x-<RAM>-<FLASH><-ETH>
                 |   |     |      |      |      |
                 |   |     |      |      |      └─ Ethernet controller
                 |   |     |      |      └─ Flash memory size
