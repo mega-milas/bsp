@@ -1,6 +1,7 @@
 # Boot Image Build System for Mega-Milas Modules
 
-![Mega-Milas Module](MM-SM-SAMA5D2-DDR2-V0.1.jpeg)
+![Mega-Milas SMARC Module Top](MM-SM-SAMA5D2-TOP.jpg)
+![Mega-Milas SMARC Module Bottom](MM-SM-SAMA5D2-BOT.jpg)
 
 This repository contains scripts for building boot images used with boards based on **[Mega-Milas](http://milas.spb.ru/)** embedded computing modules.
 
