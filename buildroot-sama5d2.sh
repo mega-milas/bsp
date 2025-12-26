@@ -35,7 +35,7 @@ ROOT=$(dirname -- "$script_path")
 GIT=https://github.com/shcgit
 BRANCH=milas
 REPO=buildroot
-DEFCONFIG=milas_sama5d2_defconfig
+DEFCONFIG=mm_sama5d2_defconfig
 OUTPUT="$ROOT/output/sama5d2"
 
 cd "$ROOT" || exit 1
