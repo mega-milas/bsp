@@ -9,14 +9,14 @@ This repository contains scripts for building boot images used with boards based
 *(Component versions may vary per board)*
 The build system integrates:
 - **[barebox](https://barebox.org/) 2025.05.0+** (bootloader)
-- **[Buildroot](https://buildroot.org/) 2025.02+** (root filesystem generator)
+- **[Buildroot](https://buildroot.org/) 2025.05+** (root filesystem generator)
 - **Linux Kernel 6.14+** ([kernel.org](https://kernel.org/))
 
 ## Quick Start (SMARC MM-SM-SAMA5D2 Module)
 ```bash
 git clone https://github.com/mega-milas/bsp.git
 cd bsp
-./buildroot.sh
+./buildroot-sama5d2.sh
 ```
 
 SD-card image created after successful build in the output/images directory.
