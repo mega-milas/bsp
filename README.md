@@ -10,7 +10,7 @@ This repository contains scripts for building boot images used with boards based
 The build system integrates:
 - **[barebox](https://barebox.org/) 2025.12.0+** (bootloader)
 - **[buildroot](https://buildroot.org/) 2025.08+** (root filesystem generator)
-- **[linux](https://kernel.org/) 6.15+** (Linux kernel)
+- **[linux](https://kernel.org/) 6.16+** (Linux kernel)
 
 ## Quick Start (SMARC MM-SM-SAMA5D2 Module)
 ```bash
