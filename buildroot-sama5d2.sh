@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ -t 1 ]; then
 	COLOR_RED='\033[0;31m'
