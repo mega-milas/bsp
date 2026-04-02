@@ -21,7 +21,7 @@ if [ "$(id -u)" = "0" ]; then
 	exit 1
 fi
 
-dependencies=(git make)
+dependencies=(awk bc cmp cpio cut file find gcc git grep head make perl rsync tar true unzip wget xargs)
 for cmd in "${dependencies[@]}"; do
 	if ! command -v "$cmd" >/dev/null 2>&1; then
 		echo -e "${COLOR_RED}Error: Required command '$cmd' not found${COLOR_RESET}" >&2
